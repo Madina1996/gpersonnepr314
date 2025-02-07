@@ -51,17 +51,17 @@
     </tr>
     </thead>
     <tbody>
-    @foreach($tabpersonne as $t)
+    @foreach($personnes as $t)
     <tr>
-        <th scope="row">{{$t[0]}}</th>
-        <td>{{$t[1]}}</td>
-        <td>{{$t[2]}}</td>
-        <td>{{$t[3]}}</td>
-        <td>{{$t[4]}}</td>
-        <td>{{$t[5]}}</td>
+        <th scope="row">{{$t->id}}</th>
+        <td>{{$t->prenom}}</td>
+        <td>{{$t->nom}}</td>
+        <td>{{$t->telephone}}</td>
+        <td>{{$t->age}}</td>
+        <td>{{$t->datenaiss}}</td>
         <td>
-            <a href="/edit/{{$t[0]}}" class="btn btn-primary">edit</a>
-            <a href="/supprimer/{{$t[0]}}" class="btn btn-danger">supprimer</a>
+            <a href="/edit/{{$t->id}}" class="btn btn-primary">edit</a>
+            <a href="/supprimer/{{$t->id}}" class="btn btn-danger">supprimer</a>
         </td>
     </tr>
     @endforeach

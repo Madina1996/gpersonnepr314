@@ -60,7 +60,7 @@
         </div>
 
         <button type="reset" class="btn btn-default">Annuler</button>
-        <button type="submit" class="btn btn-primary">Anregistrer</button>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
     </form>
 
     </div>
