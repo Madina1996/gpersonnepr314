@@ -43,22 +43,22 @@
         <form action="/update" method="post">
             @csrf
             @method("PUT")
-            <input type="hidden" name="idold" value="{{$p[0]}}">
+            <input type="hidden" name="idold" value="{{$personne->id}}">
             <div class="mb-3">
                 <label  class="form-label">Prenom</label>
-                <input type="text" class="form-control" name="prenom" value="{{$p[1]}}">
+                <input type="text" class="form-control" name="prenom" value="{{$personne->prenom}}">
             </div>
             <div class="mb-3">
                 <label  class="form-label">Nom</label>
-                <input type="text" class="form-control" name="nom" value="{{$p[2]}}">
+                <input type="text" class="form-control" name="nom" value="{{$personne->nom}}">
             </div>
             <div class="mb-3">
                 <label  class="form-label">Telephone</label>
-                <input type="text" class="form-control" name="telephone" value="{{$p[3]}}" >
+                <input type="text" class="form-control" name="telephone" value="{{$personne->telephone}}" >
             </div>
             <div class="mb-3">
                 <label  class="form-label">Date de naissance</label>
-                <input type="date" class="form-control" name="datenaisse" value="{{$p[4]}}">
+                <input type="date" class="form-control" name="datenaisse" value="{{$personne->datenaiss}}">
             </div>
 
             <button type="reset" class="btn btn-default">annuler</button>
